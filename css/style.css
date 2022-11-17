@@ -1,84 +1,81 @@
 * {
-padding: 0;
-margin: 0;
-box-sizing: border-box;
-}
-button, .enviar {
-    cursor:pointer;
-    padding: 10px; 
-    font-size: 25px;
-    border-radius: 10px;
-}
-header {
-    text-align: center;
-    padding: 35px;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 75px;
-    background-color: black;
-    color: white;
-}
-main {
-    margin: 40px auto 70px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;  
-    
-}
-.divDes, .divRad, .contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-}
-#imgDes, #imgRad {
-    width: 500px;
-    padding: 20px;
-    border-radius: 50%;
-}
-#imgMail {
-    width: 500px;
-    margin-bottom: 20px;
-}
-fieldset {
-    border: 0px;
-}
-.text {
-    width: 550px;
-    margin: 10px;
-    border: none;
-    border-bottom: 2px double black;
-    font-size: 35px;
-    opacity: .5;
-    height: 35px;
-}
-/* .text::placeholder:focus {
-    opacity: .2;
-} */
-nav ul li {
-    list-style: none;
-    display: inline-block;
-}
-.icons a img {
-    width: 80px;
-}
-.icons {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
-.marcaDeAgua {
-    display: flex;
-    align-items: center;
-    color: white;
-    background-color: black;
-    opacity: .5;
-    width: 200px;
-    height: 100px;
-    text-align: center;
-    font-size: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    position: fixed;
-    bottom: 30px;
-    right: 0px;
-}
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    button, .enviar {
+        cursor:pointer;
+        padding: 10px; 
+        font-size: 25px;
+        border-radius: 10px;
+    }
+    header {
+        text-align: center;
+        padding: 35px;
+        font-family: 'Josefin Sans', sans-serif;
+        font-size: 75px;
+        background-color: black;
+        color: white;
+    }
+    main {
+        margin: 40px auto 70px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;  
+        
+    }
+    .divDes, .divRad, .contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+    #imgDes, #imgRad {
+        width: 500px;
+        padding: 20px;
+        border-radius: 50%;
+    }
+    #imgMail {
+        width: 500px;
+        margin-bottom: 20px;
+    }
+    fieldset {
+        border: 0px;
+    }
+    .text {
+        width: 550px;
+        margin: 10px;
+        border: none;
+        border-bottom: 2px double black;
+        font-size: 35px;
+        opacity: .5;
+        height: 35px;
+    }
+    nav ul li {
+        list-style: none;
+        display: inline-block;
+    }
+    .icons a img {
+        width: 80px;
+    }
+    .icons {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .marcaDeAgua {
+        display: flex;
+        align-items: center;
+        color: white;
+        background-color: black;
+        opacity: .5;
+        width: 200px;
+        height: 100px;
+        text-align: center;
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        position: fixed;
+        bottom: 30px;
+        right: 0px;
+    }
