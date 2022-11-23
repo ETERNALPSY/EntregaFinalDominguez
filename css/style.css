@@ -58,8 +58,14 @@
         display: inline-block;
     }
     #imgDes, #imgRad  {
-       width:550px;
+        width:550px;
         border-radius: 50%;
+        animation: imagenes;
+        animation-duration: 2s;
+    }
+    @keyframes imagenes {
+        0% {scale: 1.1;}
+        100% {scale: 1;}
     }
     button, .enviar {
         margin: 30px 20px 15px;
@@ -100,12 +106,23 @@
         opacity: .5;
         height: 35px;  
     }
+    .divCarreraIcons {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .carreraIcon {
+        width: 300px;
+    }
     .icons a img {
         width: 80px;
     }
+    .media {
+        transition: .2s;
+    }
     .media:hover {
         transform: scale(1.2);
-        transition: .2s;
     }
     .icons {
         display: flex;
