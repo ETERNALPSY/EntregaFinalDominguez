@@ -62,6 +62,7 @@
         100% {scale: 1;}
     }
     button, .enviar {
+        color: black;
         margin: 30px 20px 15px;
         cursor:pointer;
         padding: 18px; 
