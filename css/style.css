@@ -29,13 +29,6 @@
         background-color: black;
         color: white;
     }
-    /* main {        
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    } */
     .divDes, .divRad, .contacto {
         margin: 40px auto 70px;
         width: auto;
@@ -105,6 +98,13 @@
         font-size: 35px;
         opacity: .5;
         height: 35px;  
+    }
+    .carreraTitulo {
+        padding: 30px;
+        font-size: 80px;
+    }
+    .desWebP {
+        font-size: 35px;
     }
     .divCarreraIcons {
         display: flex;
