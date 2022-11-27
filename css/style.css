@@ -56,10 +56,13 @@
         border-radius: 50%;
         animation: imagenes;
         animation-duration: 2s;
+
     }
     @keyframes imagenes {
-        0% {scale: 1.1;}
-        100% {scale: 1;}
+        0% {scale: 1.1;
+        opacity: 0;}
+        100% {scale: 1;
+        opacity: 1;}
     }
     button, .enviar {
         color: black;
@@ -75,6 +78,9 @@
         background-color: black;
         color: white;
     }
+    /* button:active, .enviar:active{
+        box-shadow: -10px 10px 20px black;
+    } */
     .contact__div {
         margin: 40px auto 40px;
         display: flex;
