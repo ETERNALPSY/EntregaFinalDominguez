@@ -131,6 +131,7 @@
     .carreraIcon:hover {
         filter: none;
         scale: 1.5;
+        z-index: 10;
     }
     .icons a img {
         width: 80px;
@@ -194,6 +195,14 @@
         .mainCarrera {
             margin: 30px;
         }
+        .carreraIcon {
+            filter: none;
+            height: 150px;
+
+        }
+        .desWebP {
+            font-size: 25px;
+        }
         .divCarreraIcons {
             flex-wrap: wrap;
         }
@@ -204,14 +213,6 @@
         }
     }
     @media screen and (max-width: 450px) {
-        /* .container {
-            width: auto;
-            display: flex;
-            flex-wrap: wrap;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        } */
         .container {
             display: grid;
             grid-template-columns: auto; 
@@ -252,10 +253,6 @@
         .desWebP {
             margin: 20px auto;
             font-size: 20px;
-        }
-        .carreraIcon {
-            filter: none;
-            height: 150px;
         }
         .contact__div {
             margin: 0;
