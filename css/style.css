@@ -98,11 +98,12 @@
         width: 500px;
         margin: 10px;
         border: none;
+        border-radius: 0%;
         outline: none;
         border-bottom: 2px double black;
-        font-size: 35px;
+        font-size: 25px;
         opacity: .5;
-        height: 35px;  
+        height: 35px; 
     }
     .mainCarrera {
         margin: 50px 200px;
@@ -130,7 +131,7 @@
     }
     .carreraIcon:hover {
         filter: none;
-        scale: 2;
+        scale: 1.2;
         z-index: 10;
     }
     .icons a img {
