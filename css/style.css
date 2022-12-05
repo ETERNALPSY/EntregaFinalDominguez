@@ -3,10 +3,10 @@
     margin: 0;
     box-sizing: border-box;   
 }
-    body {
+    /* body {
         font-family: Arial, Helvetica, sans-serif;
         color: black;
-    }
+    } */
     .container {
         display: grid;
         grid-template-columns: auto auto; 
@@ -20,7 +20,7 @@
     .divDes { grid-area: divDes; }
     .divRad { grid-area: divRad; }
     .footer { grid-area: footer; }
-    header {
+    /* body header {
         width: auto;
         height: auto;
         text-align: center;
@@ -29,7 +29,7 @@
         font-size: 75px;
         background-color: black;
         color: white;
-    }
+    } */
     .divDes, .divRad, .contacto {
         margin: 40px auto 70px;
         width: auto;
@@ -114,8 +114,11 @@
         font-size: 80px;
     }
     .desWebP {
-        font-size: 35px;
+        font-size: 25px;
         margin: 50px auto;
+    }
+    .h3Des {
+        font-size: 45px;
     }
     .divCarreraIcons {
         display: flex;
@@ -176,7 +179,7 @@
         background-color: black;
     }
     @media screen and (max-width: 1100px){
-        header {
+        body header {
             width: auto;
             font-size: 40px;
             padding: 10px;
@@ -223,7 +226,7 @@
               "divRad"
               "footer"; 
         }
-        header {
+        body header {
             font-size: 20px;
             padding: 10px;
         }
