@@ -33,7 +33,18 @@ strong a {
     text-decoration: none;
     transition: all .3s;
     &:hover {
-        color: #6b6b6b;
+        color: #6b6b6b;           
         text-decoration: underline;
+    }
+}
+.fondoDes {
+    @include flex(row,space-evenly,center,wrap );
+    height: 450px;
+    width: 100% vw;
+    background-image: url(/imgs/fondodes2.jpg);
+    background-attachment: fixed;
+    .fondoDesIcon {
+       height: 300px;
+        width: auto;
     }
 }
