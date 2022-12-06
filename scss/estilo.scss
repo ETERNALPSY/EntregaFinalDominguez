@@ -2,10 +2,12 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    } 
+    }
+$maincolor:black;
+
 @mixin mainFont {
     font-family: Arial, Helvetica, sans-serif;
-    color: black;    
+    color: $maincolor;    
     font-size: 35 px;
 }
 @mixin flex ($direction, $justify, $align, $wrap){
@@ -15,17 +17,17 @@
     align-items: $align;
     flex-wrap: $wrap;
 }
-@import "./carrerades";
 body {
     @include mainFont;
     header {
         width: auto;
         height: auto;
         padding: 35px;
-        background-color: black;
+        background-color: $maincolor;
         font-size: 75px;
         text-align: center;
         font-family: 'Josefin Sans', sans-serif;
         color: white;
     }
 }
+@import "./carrerades";

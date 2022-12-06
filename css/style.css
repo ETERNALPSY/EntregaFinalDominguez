@@ -102,25 +102,14 @@
         outline: none;
         border-bottom: 2px solid black;
         font-size: 25px;
-        opacity: .5;
+        opacity: .7;
         height: 35px;
         line-height: 0;
     }
     div label{
         opacity: .5;
     }
-    .mainCarrera {
-        margin: 50px 200px;
-    }
-    .carreraTitulo {
-        font-family: 'Josefin Sans', sans-serif;
-        margin: 30px;
-        font-size: 80px;
-    }
-    .desWebP {
-        font-size: 25px;
-        margin: 50px auto;
-    }
+    
     .h3Des {
         font-size: 45px;
     }
@@ -257,14 +246,20 @@
         .mainCarrera {
             margin: 10px;
         }
-        .carreraTitulo {
+        .mainCarrera .divCarreraTitulo {
+            margin: 0px;
+        }
+        .mainCarrera .divCarreraTitulo .carreraTitulo {
             font-size: 50px;
         }
-        .desWebP {
+        .mainCarrera .contenido {
             margin: 20px auto;
+        }
+        .mainCarrera .contenido__parrafo {
+            
             font-size: 20px;
         }
-        .fondoDes .fondoDesIcon {
+        .mainCarrera .fondoDes .fondoDesIcon {
             height: 200px;
         }
         .contact__div {
@@ -288,12 +283,6 @@
             bottom: 50px;
             right: 0px;
         }
-
-
-
-
-
-
         .icons a img {
             width: 50px;
         }

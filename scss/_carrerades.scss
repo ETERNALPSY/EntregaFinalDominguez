@@ -7,16 +7,42 @@ strong a {
         text-decoration: underline;
     }
 }
-.fondoDes {
-    @include flex(row,space-evenly,center,wrap );
-    height: 100%;
-    width: 100%;
-    padding: 5% 0%; 
-    background-image: url(../imgs/fondodes2.jpg);
-    background-attachment: fixed;
-    .fondoDesIcon {
-        height: 300px;
-        width: auto;
-        margin: 1%;
+.mainCarrera {
+    margin: 50px 200px;
+    .divCarreraTitulo {
+        margin: 30px;
+        .carreraTitulo {
+            font-family: 'Josefin Sans', sans-serif;
+            font-size: 80px;
+        }
+    }
+    .contenido{
+        margin: 50px auto;
+        &__parrafo {
+            font-size: 25px;
+        }
+    }
+    .fondoDes {
+        @include flex(row,space-evenly,center,wrap );
+        height: 100%;
+        width: 100%;
+        padding: 6% 0%; 
+        background-image: url(../imgs/fondodes2.jpg);
+        background-attachment: fixed;
+        .fondoDesIcon {
+            height: 250px;
+            width: auto;
+            margin: 1%;
+        }
+    }
+    .subtitulo {
+        font-size: 45px;
+        margin: 30px;
     }
 }
+
+
+
+
+
+
