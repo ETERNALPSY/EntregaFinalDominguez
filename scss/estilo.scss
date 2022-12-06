@@ -39,10 +39,12 @@ strong a {
 }
 .fondoDes {
     @include flex(row,space-evenly,center,wrap );
-    height: 450px;
-    width: 100% vw;
+    height: 100%;
+    width: 100%;
+    padding: 5% 0%; 
     background-image: url(/imgs/fondodes2.jpg);
     background-attachment: fixed;
+    background: blur;
     .fondoDesIcon {
        height: 300px;
         width: auto;
