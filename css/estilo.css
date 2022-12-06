@@ -35,9 +35,10 @@ strong a {
   flex-wrap: wrap;
   height: 100%;
   width: 100%;
-  padding: 6% 0%;
-  background-image: url(/imgs/fondodes.jpg);
+  padding: 7% 0%;
+  background-image: url(../imgs/fondodes.jpg);
   background-attachment: fixed; }
   .fondoDes .fondoDesIcon {
     height: 300px;
-    width: auto; }
+    width: auto;
+    margin: 1%; }

@@ -41,11 +41,12 @@ strong a {
     @include flex(row,space-evenly,center,wrap );
     height: 100%;
     width: 100%;
-    padding: 6% 0%; 
-    background-image: url(/imgs/fondodes.jpg);
+    padding: 7% 0%; 
+    background-image: url(../imgs/fondodes.jpg);
     background-attachment: fixed;
     .fondoDesIcon {
-       height: 300px;
+        height: 300px;
         width: auto;
+        margin: 1%;
     }
 }
