@@ -24,13 +24,19 @@
                 <img id="img__contacto" src="./imgs/hello.gif" alt="HELLO">
             </div> 
             <form action="">
-                <fieldset class="contacto">                  
-                    <input class="text" type="text" name="name" placeholder="NOMBRE">    
+                <fieldset class="contacto"> 
+                    <div class="form-floating mb-3">                 
+                        <input class="form-control text" type="text" name="name" placeholder="NOMBRE">
+                        <label for="floatingInput">Nombre</label>
+                    </div>    
                     <div class="form-floating mb-3">
-                        <input type="email" class="form-control text" id="floatingInput" placeholder="E-mail">
-                        <label for="floatingInput">Email address</label>
-                      </div>
-                    <input class="text" type="number" name="telefono"  placeholder="TELEFONO">
+                        <input type="email" class="form-control text" id="floatingInput" placeholder="CORREO">
+                        <label for="floatingInput">Correo</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input class="form-control text" type="number" name="telefono"  placeholder="TELEFONO">
+                        <label for="floatingInput">Telefono</label>
+                    </div>
                     <input class="enviar" type="submit" value="ENVIAR">
                 </fieldset>
             </form>

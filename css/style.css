@@ -32,7 +32,7 @@
     } */
     .divDes, .divRad, .contacto {
         margin: 40px auto 70px;
-        width: auto;
+        width: 50%;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -52,7 +52,8 @@
         display: inline-block;
     }
     #imgDes, #imgRad  {
-        width:550px;
+        width: 550px    ;
+        height: auto;
         border-radius: 50%;
         animation: imagenes;
         animation-duration: 2s;
@@ -96,14 +97,17 @@
         background-color: transparent;
         color: black;
         width: 500px;
-        margin: 10px;
         border: none;
         border-radius: 0%;
         outline: none;
-        border-bottom: 2px double black;
+        border-bottom: 2px solid black;
         font-size: 25px;
         opacity: .5;
-        height: 35px; 
+        height: 35px;
+        line-height: 0;
+    }
+    div label{
+        opacity: .5;
     }
     .mainCarrera {
         margin: 50px 200px;
@@ -188,7 +192,7 @@
             margin: 0;
             margin-bottom: 30px;
             width: auto;
-            overflow: hidden
+            overflow: hidden;
         }
         #imgDes, #imgRad {
             border-radius: 0%;
@@ -216,7 +220,7 @@
         }
         .marcaDeAgua {
             width: 150px;
-            height: 100px;
+            height: 80px;
             font-size: 20px;
         }
     }
@@ -236,7 +240,7 @@
         }
         .divDes, .divRad {
             margin: 0;
-            width: auto;
+            width: 100%;
             overflow: hidden
         }
         #imgDes, #imgRad {
