@@ -3,20 +3,6 @@
   margin: 0;
   box-sizing: border-box; }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  color: black;
-  font-size: 35 px; }
-  body header {
-    width: auto;
-    height: auto;
-    padding: 35px;
-    background-color: black;
-    font-size: 75px;
-    text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
-    color: white; }
-
 strong a {
   font-family: Arial, Helvetica, sans-serif;
   color: black;
@@ -42,3 +28,17 @@ strong a {
     height: 300px;
     width: auto;
     margin: 1%; }
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+  font-size: 35 px; }
+  body header {
+    width: auto;
+    height: auto;
+    padding: 35px;
+    background-color: black;
+    font-size: 75px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    color: white; }

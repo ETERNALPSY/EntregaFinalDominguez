@@ -15,6 +15,7 @@
     align-items: $align;
     flex-wrap: $wrap;
 }
+@import "./carrerades";
 body {
     @include mainFont;
     header {
@@ -26,27 +27,5 @@ body {
         text-align: center;
         font-family: 'Josefin Sans', sans-serif;
         color: white;
-    }
-}
-strong a {
-    @include mainFont;
-    text-decoration: none;
-    transition: all .3s;
-    &:hover {
-        color: #6b6b6b;           
-        text-decoration: underline;
-    }
-}
-.fondoDes {
-    @include flex(row,space-evenly,center,wrap );
-    height: 100%;
-    width: 100%;
-    padding: 7% 0%; 
-    background-image: url(../imgs/fondodes2.jpg);
-    background-attachment: fixed;
-    .fondoDesIcon {
-        height: 300px;
-        width: auto;
-        margin: 1%;
     }
 }

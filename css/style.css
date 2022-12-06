@@ -200,6 +200,7 @@
             margin: 30px;
         }
         .carreraTitulo {
+            font-size: 60px;
             margin: 0px;
         }
         .carreraIcon {
@@ -208,6 +209,7 @@
         }
         .desWebP {
             font-size: 25px;
+            margin: 25px auto;
         }
         .divCarreraIcons {
             flex-wrap: wrap;
@@ -253,11 +255,13 @@
         }
         .carreraTitulo {
             font-size: 50px;
-            margin: 10px;
         }
         .desWebP {
             margin: 20px auto;
             font-size: 20px;
+        }
+        .fondoDes .fondoDesIcon {
+            height: 200px;
         }
         .contact__div {
             margin: 0;
