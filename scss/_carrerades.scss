@@ -1,12 +1,3 @@
-strong a {
-    @include mainFont;
-    text-decoration: none;
-    transition: all .3s;
-    &:hover {
-        color: #6b6b6b;           
-        text-decoration: underline;
-    }
-}
 .mainCarrera {
     margin: 50px 200px;
     .divCarreraTitulo {
@@ -20,6 +11,23 @@ strong a {
         margin: 50px auto;
         &__parrafo {
             font-size: 25px;
+            .html{
+                color: rgb(255, 68, 0);
+                text-decoration: none;
+                transition: all .3s;
+                &:hover {
+                    color: #6b6b6b;           
+                    text-decoration: underline;
+                }
+            }
+            .css{
+                @extend .html;
+                color: blue;
+            }
+            .javascript{
+                @extend .html;
+                color: rgb(194, 194, 0);
+            }
         }
     }
     .fondoDes {
@@ -40,9 +48,3 @@ strong a {
         margin: 30px;
     }
 }
-
-
-
-
-
-
