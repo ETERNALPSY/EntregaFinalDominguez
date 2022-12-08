@@ -1,8 +1,3 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;   
-}
     /* body {
         font-family: Arial, Helvetica, sans-serif;
         color: black;
@@ -108,7 +103,7 @@
     div label{
         opacity: .5;
     }
-    .divCarreraIcons {
+    /* .divCarreraIcons {
         display: flex;
         flex-direction: row;
         justify-content: center;
@@ -124,7 +119,7 @@
         filter: none;
         scale: 1.2;
         z-index: 10;
-    }
+    } */
     .icons a img{
         width: 80px;
     }

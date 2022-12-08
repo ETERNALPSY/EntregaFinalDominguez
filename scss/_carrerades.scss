@@ -7,24 +7,23 @@
             font-size: 80px;
         }
     }
-    .contenido{
+    .contenido {
         margin: 50px auto;
         &__parrafo {
             font-size: 25px;
-            .html{
+            .html {
                 color: rgb(255, 68, 0);
                 text-decoration: none;
                 transition: all .3s;
                 &:hover {
-                    color: #6b6b6b;           
                     text-decoration: underline;
                 }
             }
-            .css{
+            .css {
                 @extend .html;
                 color: blue;
             }
-            .javascript{
+            .javascript {
                 @extend .html;
                 color: rgb(194, 194, 0);
             }
@@ -46,5 +45,22 @@
     .subtitulo {
         font-size: 45px;
         margin: 30px;
+    }
+    .divCarreraIcons {
+        @include flex(row,center,
+        center, wrap);
+        margin: 20px auto;
+        width: 100% vw;
+        .carreraIcon{
+            display: inline-block;
+            height: 193px;  
+            filter: blur(10px) grayscale(100%);
+            transition: all .3s;
+            &:hover{
+                filter: none;
+                scale: 1.4;
+                z-index: 1;
+            }
+        }
     }
 }

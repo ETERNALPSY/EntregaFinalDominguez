@@ -111,7 +111,6 @@ body {
         text-decoration: none;
         transition: all .3s; }
         .mainCarrera .contenido__parrafo .html:hover, .mainCarrera .contenido__parrafo .css:hover, .mainCarrera .contenido__parrafo .javascript:hover {
-          color: #6b6b6b;
           text-decoration: underline; }
       .mainCarrera .contenido__parrafo .css {
         color: blue; }
@@ -135,6 +134,23 @@ body {
   .mainCarrera .subtitulo {
     font-size: 45px;
     margin: 30px; }
+  .mainCarrera .divCarreraIcons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px auto;
+    width: 100% vw; }
+    .mainCarrera .divCarreraIcons .carreraIcon {
+      display: inline-block;
+      height: 193px;
+      filter: blur(10px) grayscale(100%);
+      transition: all .3s; }
+      .mainCarrera .divCarreraIcons .carreraIcon:hover {
+        filter: none;
+        scale: 1.4;
+        z-index: 1; }
 
 @media screen and (max-width: 1100px) {
   body header {
