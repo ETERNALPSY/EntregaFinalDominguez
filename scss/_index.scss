@@ -67,7 +67,20 @@ body {
       @extend .imgDes;
     }
   }
-  
+  footer{
+    
+    .copy{
+      display: grid;
+      justify-items: center;
+      align-items: center;
+      color: white;
+      font-size: 20px;
+      width: 100%;
+      height: 50px;
+      margin-top: 10px;
+      background-color: $maincolor;
+    }
+  }
 }
 
 
@@ -78,7 +91,7 @@ body {
   align-items: center;
   justify-content: center;
   color: white;
-  background-color: black;
+  background-color: $maincolor;
   opacity: .4;
   width: 200px;
   height: 100px;
@@ -87,15 +100,4 @@ body {
   position: fixed;
   bottom: 30px;
   right: 0px;
-}
-.copy{
-  display: grid;
-  justify-items: center;
-  align-items: center;
-  color: white;
-  font-size: 20px;
-  width: 100%;
-  height: 50px;
-  margin-top: 10px;
-  background-color: black;
 }
