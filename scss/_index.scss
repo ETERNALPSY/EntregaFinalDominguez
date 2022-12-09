@@ -3,22 +3,30 @@
   margin: 0;
   box-sizing: border-box;
   }
-.container {
+  .container {
     display: grid;
     grid-template-columns: auto auto; 
     grid-template-rows: auto auto auto;   
     grid-template-areas: 
-      "header header"
-      "divDes divRad"
-      "footer footer"; 
-}
-.header { grid-area: header; }
-body .divDes { grid-area: divDes; }
-body .divRad { grid-area: divRad; }
-.footer { grid-area: footer; }
-
+    "header header"
+    "divDes divRad"
+    "footer footer";
+    @include phone {
+      grid-template-columns: auto; 
+      grid-template-rows: auto auto auto auto;   
+      grid-template-areas: 
+        "header"
+        "divDes"
+        "divRad"
+        "footer"; 
+    }
+  }
+  .header { grid-area: header; }
+  body .divDes { grid-area: divDes; }
+  body .divRad { grid-area: divRad; }
+  .footer { grid-area: footer; } 
 body {
-  @include mainFont;
+    @include mainFont;
   header {
     width: auto;
     height: auto;
@@ -28,17 +36,46 @@ body {
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     color: white;
+    @include tablet {
+      width: auto;
+      font-size: 40px;
+      padding: 10px;
+    }
+    @include phone {
+      font-size: 20px;
+      padding: 10px;
+    }
+
   }
   .divDes{   
+    @include flex(row,center,center,wrap);
     margin: 40px auto 70px;
-    height: auto;  
-    @include flex(column,center,center,wrap);
+    height: auto;
+    @include tablet {
+      margin: 0;
+      margin-bottom: 30px;
+      width: auto;
+      overflow: hidden;
+    } 
+    @include phone {
+      margin: 0;
+      width: 100%;
+      overflow: hidden
+    }   
     .imgDes{
       width: 550px    ;
       height: auto;
       border-radius: 50%;
       animation: imagenes;
       animation-duration: 2s;
+      @include tablet {
+        width: 500px;
+        border-radius: 0%;
+      }
+      @include phone {
+        height: 300px;
+        width: auto;
+      }
     }
     @keyframes imagenes {
       0% {scale: 1.1;
@@ -47,7 +84,16 @@ body {
       opacity: 1;}
     }
     button {
-      @include boton(300px);
+      @include boton(350px);
+      @include tablet {
+        width: 300px;
+      }
+      @include phone {
+        margin: 10px;
+        font-size: 20px;
+        width: 250px;
+        border-radius: 50px;
+      }
     }
   }
   .divRad{
@@ -69,6 +115,18 @@ body {
       position: fixed;
       bottom: 30px;
       right: 0px;
+      @include tablet {
+        width: 150px;
+        height: 80px;
+        font-size: 20px;
+      }
+      @include phone {
+        width: 100px;
+        height: 50px;
+        font-size: 15px;
+        bottom: 50px;
+        right: 0px;
+      }
     }
     .icons {
       @include flex(row,space-around,center,wrap);
@@ -77,6 +135,9 @@ body {
         transition: all .2s;
         &:hover {
           transform: scale(1.2);
+        }
+        @include phone {
+          width: 50px;
         }
       }
     }

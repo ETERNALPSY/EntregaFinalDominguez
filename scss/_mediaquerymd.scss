@@ -1,42 +1,43 @@
 @media screen and (max-width: 1100px){
-        body header {
-            width: auto;
-            font-size: 40px;
-            padding: 10px;
-        }
-        .divDes, .divRad {
-            margin: 0;
-            margin-bottom: 30px;
-            width: auto;
-            overflow: hidden;
-        }
-        .imgDes, .imgRad {
-            border-radius: 0%;
-        }
-        button, .enviar {
-        width: 350px;
-        }
-        .mainCarrera {
-            margin: 30px;
-        }
-        .carreraTitulo {
-            font-size: 60px;
-            margin: 0px;
-        }
-        .carreraIcon {
-            filter: none;
-            height: 150px;
-        }
-        .desWebP {
-            font-size: 25px;
-            margin: 25px auto;
-        }
-        .divCarreraIcons {
-            flex-wrap: wrap;
-        }
-        .marcaDeAgua {
-            width: 150px;
-            height: 80px;
-            font-size: 20px;
-        }
+    // body header {
+    //     width: auto;
+    //     font-size: 40px;
+    //     padding: 10px;
+    // }
+    // .divDes, .divRad {
+    //     margin: 0;
+    //     margin-bottom: 30px;
+    //     width: auto;
+    //     overflow: hidden;
+    // }
+    // .imgDes, .imgRad {
+    //     border-radius: 0%;
+    // }
+    .enviar {
+    width: 350px;
     }
+    .mainCarrera {
+        margin: 30px;
+    }
+    .carreraTitulo {
+        font-size: 60px;
+        margin: 0px;
+    }
+    .carreraIcon {
+        filter: none;
+        height: 150px;
+    }
+    .desWebP {
+        font-size: 25px;
+        margin: 25px auto;
+    }
+    .divCarreraIcons {
+        flex-wrap: wrap;
+    }
+    // .marcaDeAgua {
+    //     width: 150px;
+    //     height: 80px;
+    //     font-size: 20px;
+    // }
+}
+

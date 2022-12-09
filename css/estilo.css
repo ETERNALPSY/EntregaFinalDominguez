@@ -8,6 +8,11 @@
   grid-template-columns: auto auto;
   grid-template-rows: auto auto auto;
   grid-template-areas: "header header" "divDes divRad" "footer footer"; }
+  @media screen and (max-width: 450px) {
+    .container {
+      grid-template-columns: auto;
+      grid-template-rows: auto auto auto auto;
+      grid-template-areas: "header" "divDes" "divRad" "footer"; } }
 
 .header {
   grid-area: header; }
@@ -34,20 +39,48 @@ body {
     text-align: center;
     font-family: 'Josefin Sans', sans-serif;
     color: white; }
+    @media screen and (max-width: 1100px) {
+      body header {
+        width: auto;
+        font-size: 40px;
+        padding: 10px; } }
+    @media screen and (max-width: 450px) {
+      body header {
+        font-size: 20px;
+        padding: 10px; } }
   body .divDes, body .divRad {
-    margin: 40px auto 70px;
-    height: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    margin: 40px auto 70px;
+    height: auto; }
+    @media screen and (max-width: 1100px) {
+      body .divDes, body .divRad {
+        margin: 0;
+        margin-bottom: 30px;
+        width: auto;
+        overflow: hidden; } }
+    @media screen and (max-width: 450px) {
+      body .divDes, body .divRad {
+        margin: 0;
+        width: 100%;
+        overflow: hidden; } }
     body .divDes .imgDes, body .divRad .imgDes, body .divRad .imgRad {
       width: 550px;
       height: auto;
       border-radius: 50%;
       animation: imagenes;
       animation-duration: 2s; }
+      @media screen and (max-width: 1100px) {
+        body .divDes .imgDes, body .divRad .imgDes, body .divRad .imgRad {
+          width: 500px;
+          border-radius: 0%; } }
+      @media screen and (max-width: 450px) {
+        body .divDes .imgDes, body .divRad .imgDes, body .divRad .imgRad {
+          height: 300px;
+          width: auto; } }
 
 @keyframes imagenes {
   0% {
@@ -58,7 +91,7 @@ body {
     opacity: 1; } }
     body .divDes button, body .divRad button {
       color: black;
-      width: 300px;
+      width: 350px;
       margin: 30px 10px 15px;
       cursor: pointer;
       padding: 18px;
@@ -69,6 +102,15 @@ body {
       body .divDes button:hover, body .divRad button:hover {
         background-color: black;
         color: white; }
+      @media screen and (max-width: 1100px) {
+        body .divDes button, body .divRad button {
+          width: 300px; } }
+      @media screen and (max-width: 450px) {
+        body .divDes button, body .divRad button {
+          margin: 10px;
+          font-size: 20px;
+          width: 250px;
+          border-radius: 50px; } }
   body footer .marcaDeAgua {
     display: flex;
     flex-direction: column;
@@ -85,6 +127,18 @@ body {
     position: fixed;
     bottom: 30px;
     right: 0px; }
+    @media screen and (max-width: 1100px) {
+      body footer .marcaDeAgua {
+        width: 150px;
+        height: 80px;
+        font-size: 20px; } }
+    @media screen and (max-width: 450px) {
+      body footer .marcaDeAgua {
+        width: 100px;
+        height: 50px;
+        font-size: 15px;
+        bottom: 50px;
+        right: 0px; } }
   body footer .icons {
     display: flex;
     flex-direction: row;
@@ -96,6 +150,9 @@ body {
       transition: all .2s; }
       body footer .icons .media:hover {
         transform: scale(1.2); }
+      @media screen and (max-width: 450px) {
+        body footer .icons .media {
+          width: 50px; } }
   body footer .copy {
     display: grid;
     justify-items: center;
@@ -215,18 +272,7 @@ body {
         color: white; }
 
 @media screen and (max-width: 1100px) {
-  body header {
-    width: auto;
-    font-size: 40px;
-    padding: 10px; }
-  .divDes, body .divRad, .divRad {
-    margin: 0;
-    margin-bottom: 30px;
-    width: auto;
-    overflow: hidden; }
-  #imgDes, #imgRad {
-    border-radius: 0%; }
-  button, .enviar {
+  .enviar {
     width: 350px; }
   .mainCarrera {
     margin: 30px; }
@@ -240,29 +286,10 @@ body {
     font-size: 25px;
     margin: 25px auto; }
   .divCarreraIcons {
-    flex-wrap: wrap; }
-  .marcaDeAgua {
-    width: 150px;
-    height: 80px;
-    font-size: 20px; } }
+    flex-wrap: wrap; } }
 
 @media screen and (max-width: 450px) {
-  .container {
-    grid-template-columns: auto;
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: "header" "divDes" "divRad" "footer"; }
-  body header {
-    font-size: 20px;
-    padding: 10px; }
-  .divDes, body .divRad, .divRad {
-    margin: 0;
-    width: 100%;
-    overflow: hidden; }
-  #imgDes, #imgRad {
-    height: 300px;
-    width: auto;
-    border-radius: 0%; }
-  button, .enviar {
+  .enviar {
     margin: 10px;
     font-size: 20px;
     width: 250px;
@@ -289,12 +316,4 @@ body {
     margin: 15px;
     font-size: 25px; }
   #img__contacto {
-    height: 350px; }
-  .marcaDeAgua {
-    width: 100px;
-    height: 50px;
-    font-size: 15px;
-    bottom: 50px;
-    right: 0px; }
-  .icons a img {
-    width: 50px; } }
+    height: 350px; } }
