@@ -58,7 +58,8 @@ body {
     opacity: 1; } }
     body .divDes button, body .divRad button {
       color: black;
-      margin: 30px 20px 15px;
+      width: 300px;
+      margin: 30px 10px 15px;
       cursor: pointer;
       padding: 18px;
       font-size: 25px;
@@ -68,6 +69,33 @@ body {
       body .divDes button:hover, body .divRad button:hover {
         background-color: black;
         color: white; }
+  body footer .marcaDeAgua {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+    background-color: black;
+    opacity: .4;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    font-size: 30px;
+    position: fixed;
+    bottom: 30px;
+    right: 0px; }
+  body footer .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; }
+    body footer .icons .media {
+      width: 80px;
+      transition: all .2s; }
+      body footer .icons .media:hover {
+        transform: scale(1.2); }
   body footer .copy {
     display: grid;
     justify-items: center;
@@ -78,21 +106,6 @@ body {
     height: 50px;
     margin-top: 10px;
     background-color: black; }
-
-.marcaDeAgua {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  background-color: black;
-  opacity: .4;
-  width: 200px;
-  height: 100px;
-  text-align: center;
-  font-size: 30px;
-  position: fixed;
-  bottom: 30px;
-  right: 0px; }
 
 .mainCarrera {
   margin: 50px 200px; }
@@ -150,6 +163,56 @@ body {
         filter: none;
         scale: 1.4;
         z-index: 1; }
+
+.contacto {
+  margin: 40px auto 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: row; }
+  .contacto__img {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: row;
+    width: 550px;
+    height: 550px;
+    overflow: hidden;
+    border-radius: 50%; }
+  .contacto .formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: norow;
+    margin: 30px auto; }
+    .contacto .formulario .form__imput {
+      background-color: transparent;
+      color: black;
+      width: 550px;
+      border: none;
+      border-radius: 0%;
+      outline: none;
+      border-bottom: 2px solid black;
+      font-size: 25px;
+      opacity: .7; }
+      .contacto .formulario .form__imput label {
+        opacity: .5; }
+    .contacto .formulario .enviar__button {
+      color: black;
+      width: 200px;
+      margin: 30px 10px 15px;
+      cursor: pointer;
+      padding: 18px;
+      font-size: 25px;
+      border: 4px solid black;
+      background-color: transparent;
+      transition: all .3 s; }
+      .contacto .formulario .enviar__button:hover {
+        background-color: black;
+        color: white; }
 
 @media screen and (max-width: 1100px) {
   body header {

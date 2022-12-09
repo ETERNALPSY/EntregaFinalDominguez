@@ -47,29 +47,40 @@ body {
       opacity: 1;}
     }
     button {
-      color: $maincolor;
-      margin: 30px 20px 15px;
-      cursor:pointer;
-      padding: 18px; 
-      font-size: 25px;
-      border: 4px solid $maincolor;
-      background-color: transparent;
-      transition: all .3 s;
-      &:hover{
-        background-color: $maincolor;
-        color: white;
-      }
+      @include boton(300px);
     }
   }
   .divRad{
     @extend .divDes;
-    .imgRad{
+    .imgRad {
       @extend .imgDes;
     }
   }
-  footer{
-    
-    .copy{
+  footer {
+    .marcaDeAgua {
+      @include flex(column,center,center,wrap);
+      color: white;
+      background-color: $maincolor;
+      opacity: .4;
+      width: 200px;
+      height: 100px;
+      text-align: center;
+      font-size: 30px;
+      position: fixed;
+      bottom: 30px;
+      right: 0px;
+    }
+    .icons {
+      @include flex(row,space-around,center,wrap);
+      .media {
+        width: 80px;
+        transition: all .2s;
+        &:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+    .copy {
       display: grid;
       justify-items: center;
       align-items: center;
@@ -81,23 +92,4 @@ body {
       background-color: $maincolor;
     }
   }
-}
-
-
-
-
-.marcaDeAgua {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: white;
-  background-color: $maincolor;
-  opacity: .4;
-  width: 200px;
-  height: 100px;
-  text-align: center;
-  font-size: 30px;
-  position: fixed;
-  bottom: 30px;
-  right: 0px;
 }

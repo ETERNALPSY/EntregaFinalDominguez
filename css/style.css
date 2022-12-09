@@ -25,7 +25,7 @@
         background-color: black;
         color: white;
     } */
-    /* .divDes, .divRad, .contacto {
+        /* .contacto {
         margin: 40px auto 70px;
         width: 50%;
         height: auto;
@@ -73,7 +73,7 @@
         background-color: black;
         color: white;
     } */
-    .contact__div {
+    /* .contact__div {
         margin: 40px auto 40px;
         display: flex;
         flex-direction: column;
@@ -83,11 +83,11 @@
         height: 550px;
         overflow: hidden;
         border-radius: 50%;
-    }
-    .contacto {
+    } */
+    /* .contacto form {
         border: 0px;
-    }
-    .text {
+    } */
+    /* .text {
         background-color: transparent;
         color: black;
         width: 500px;
@@ -99,10 +99,10 @@
         opacity: .7;
         height: 35px;
         line-height: 0;
-    }
-    div label{
+    } */
+    /* div label{
         opacity: .5;
-    }
+    } */
     /* .divCarreraIcons {
         display: flex;
         flex-direction: row;
@@ -120,7 +120,7 @@
         scale: 1.2;
         z-index: 10;
     } */
-    .icons a img{
+    /* .icons a img{
         width: 80px;
     }
     .media {
@@ -128,13 +128,13 @@
     }
     .media:hover {
         transform: scale(1.2);
-    }
-    .icons {
+    } */
+    /* .icons {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
-    }
+    } */
     /* .marcaDeAgua {
         display: flex;
         align-items: center;

@@ -10,3 +10,18 @@
     align-items: $align;
     flex-wrap: $wrap;
 }
+@mixin boton($ancho) {
+    color: $maincolor;
+    width: $ancho;
+    margin: 30px 10px 15px;
+    cursor:pointer;
+    padding: 18px; 
+    font-size: 25px;
+    border: 4px solid $maincolor;
+    background-color: transparent;
+    transition: all .3 s;
+    &:hover{
+      background-color: $maincolor;
+      color: white;
+    }
+}

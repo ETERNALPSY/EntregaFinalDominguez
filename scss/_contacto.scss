@@ -1,0 +1,32 @@
+.contacto {
+    margin: 40px auto 40px;
+    @include flex(column,center,center,row);
+    &__img{
+        @include flex(column,center,center,row);    
+        width: 550px;
+        height: 550px;
+        overflow: hidden;
+        border-radius: 50%;
+    }
+    .formulario {
+        @include flex(column,center,center,norow);
+        margin: 30px auto;
+        .form__imput {
+            background-color: transparent;
+            color: $maincolor;
+            width: 550px;
+            border: none;
+            border-radius: 0%;
+            outline: none;
+            border-bottom: 2px solid black;
+            font-size: 25px;
+            opacity: .7;
+            label {
+                opacity: .5;
+            }
+        }
+        .enviar__button {
+            @include boton(200px);
+        }
+    }
+}
