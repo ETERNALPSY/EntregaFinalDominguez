@@ -1,10 +1,26 @@
 .mainCarrera {
     margin: 50px 200px;
+    @include tablet {
+        margin: 30px 50px;
+    }
+    @include phone {
+        margin: 15px;
+    }
     .divCarreraTitulo {
         margin: 30px;
+        @include phone {
+            margin: 0px;
+        }
         .carreraTitulo {
             font-family: 'Josefin Sans', sans-serif;
             font-size: 80px;
+            @include tablet {
+                font-size: 60px;
+                margin: 0px; 
+            }
+            @include phone {
+                font-size: 50px;
+            }
         }
     }
     .contenido {
@@ -27,6 +43,12 @@
                 @extend .html;
                 color: rgb(194, 194, 0);
             }
+            @include phone {
+                font-size: 20px;
+            }
+        }
+        @include phone {
+            margin: 20px auto;
         }
     }
     .fondoDes {
@@ -40,11 +62,18 @@
             height: 250px;
             width: auto;
             margin: 1%;
+            @include phone {
+                height: 200px;
+            }
         }
     }
     .subtitulo {
         font-size: 45px;
         margin: 30px;
+        @include phone {
+            font-size: 35px;
+            margin: 0px;
+        }
     }
     .divCarreraIcons {
         @include flex(row,center,
@@ -60,6 +89,10 @@
                 filter: none;
                 scale: 1.4;
                 z-index: 1;
+            }
+            @include tablet {
+                filter: none;
+                 height: 150px;
             }
         }
     }

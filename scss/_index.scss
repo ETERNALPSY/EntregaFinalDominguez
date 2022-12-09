@@ -48,10 +48,11 @@ body {
 
   }
   .divDes{   
-    @include flex(row,center,center,wrap);
+    @include flex(column,center,center,wrap);
     margin: 40px auto 70px;
     height: auto;
     @include tablet {
+      flex-direction: row;
       margin: 0;
       margin-bottom: 30px;
       width: auto;
@@ -100,6 +101,13 @@ body {
     @extend .divDes;
     .imgRad {
       @extend .imgDes;
+    }
+  }
+  nav ul {
+    @include flex(row,center,center,wrap);
+    li {
+      list-style: none;
+      display: inline-block;
     }
   }
   footer {
