@@ -1,7 +1,6 @@
 .contacto {
     margin: 40px auto 40px;
     @include flex(column,center,center,row);
-    overflow: hidden;
     @include phone {
         margin: 0;
         width: auto;
@@ -9,6 +8,8 @@
     }
     &__img{
         @include flex(column,center,center,row);
+        height: 550px;
+        width: 550px;
         overflow: hidden;
         border-radius: 50%;
         @include phone {

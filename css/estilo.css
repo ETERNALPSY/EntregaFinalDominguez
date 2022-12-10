@@ -267,8 +267,7 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: row;
-  overflow: hidden; }
+  flex-wrap: row; }
   @media screen and (max-width: 500px) {
     .contacto {
       margin: 0;
@@ -280,6 +279,8 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: row;
+    height: 550px;
+    width: 550px;
     overflow: hidden;
     border-radius: 50%; }
     @media screen and (max-width: 500px) {
