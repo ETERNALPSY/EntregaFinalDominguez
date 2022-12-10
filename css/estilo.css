@@ -92,7 +92,7 @@ body {
     opacity: 1; } }
     body .divDes button, body .divRad button {
       color: black;
-      width: 350px;
+      width: 300px;
       margin: 30px 10px 15px;
       cursor: pointer;
       padding: 18px;
@@ -103,9 +103,6 @@ body {
       body .divDes button:hover, body .divRad button:hover {
         background-color: black;
         color: white; }
-      @media screen and (max-width: 1100px) {
-        body .divDes button, body .divRad button {
-          width: 300px; } }
       @media screen and (max-width: 500px) {
         body .divDes button, body .divRad button {
           margin: 10px;
@@ -270,17 +267,27 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  flex-wrap: row; }
+  flex-wrap: row;
+  overflow: hidden; }
+  @media screen and (max-width: 500px) {
+    .contacto {
+      margin: 0;
+      width: auto;
+      height: auto; } }
   .contacto__img {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: row;
-    width: 550px;
-    height: 550px;
     overflow: hidden;
     border-radius: 50%; }
+    @media screen and (max-width: 500px) {
+      .contacto__img {
+        border-radius: 0%; }
+        .contacto__img .img__contacto {
+          height: 350px;
+          width: auto; } }
   .contacto .formulario {
     display: flex;
     flex-direction: column;
@@ -300,6 +307,11 @@ body {
       opacity: .7; }
       .contacto .formulario .form__imput label {
         opacity: .5; }
+      @media screen and (max-width: 500px) {
+        .contacto .formulario .form__imput {
+          width: 350px;
+          margin: 15px;
+          font-size: 25px; } }
     .contacto .formulario .enviar__button {
       color: black;
       width: 200px;
@@ -313,25 +325,6 @@ body {
       .contacto .formulario .enviar__button:hover {
         background-color: black;
         color: white; }
-
-@media screen and (max-width: 1100px) {
-  .enviar {
-    width: 350px; } }
-
-@media screen and (max-width: 450px) {
-  .enviar {
-    margin: 10px;
-    font-size: 20px;
-    width: 250px;
-    border-radius: 50px; }
-  .contact__div {
-    margin: 0;
-    width: auto;
-    height: auto;
-    border-radius: 0%; }
-  .text {
-    width: 350px;
-    margin: 15px;
-    font-size: 25px; }
-  #img__contacto {
-    height: 350px; } }
+      @media screen and (max-width: 500px) {
+        .contacto .formulario .enviar__button {
+          border-radius: 50px; } }

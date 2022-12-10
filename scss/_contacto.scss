@@ -1,12 +1,23 @@
 .contacto {
     margin: 40px auto 40px;
     @include flex(column,center,center,row);
+    overflow: hidden;
+    @include phone {
+        margin: 0;
+        width: auto;
+        height: auto;
+    }
     &__img{
-        @include flex(column,center,center,row);    
-        width: 550px;
-        height: 550px;
+        @include flex(column,center,center,row);
         overflow: hidden;
         border-radius: 50%;
+        @include phone {
+            .img__contacto{
+                height: 350px;
+                width: auto;
+            }            
+            border-radius: 0%;
+        }
     }
     .formulario {
         @include flex(column,center,center,norow);
@@ -18,15 +29,23 @@
             border: none;
             border-radius: 0%;
             outline: none;
-            border-bottom: 2px solid black;
+            border-bottom: 2px solid $maincolor;
             font-size: 25px;
             opacity: .7;
             label {
                 opacity: .5;
             }
+            @include phone {
+                width: 350px;
+                margin: 15px;
+                font-size: 25px;
+            }
         }
         .enviar__button {
-            @include boton(200px);
+            @include boton(200px);        
+            @include phone {
+                border-radius: 50px;
+            }
         }
     }
 }
