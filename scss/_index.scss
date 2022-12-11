@@ -120,6 +120,9 @@ body {
       position: fixed;
       bottom: 30px;
       right: 0px;
+      p {
+        margin: 0px;
+      }
       @include tablet {
         width: 150px;
         height: 80px;

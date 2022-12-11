@@ -12,7 +12,7 @@
             margin: 0px;
         }
         .carreraTitulo {
-            font-family: 'Josefin Sans', sans-serif;
+            @include mainFont;
             font-size: 80px;
             @include tablet {
                 font-size: 60px;
@@ -41,7 +41,7 @@
             }
             .javascript {
                 @extend .html;
-                color: rgb(194, 194, 0);
+                color: rgb(220, 220, 81);
             }
             @include phone {
                 font-size: 20px;
@@ -58,6 +58,7 @@
         padding: 6% 0%; 
         background-image: url(../imgs/fondodes2.jpg);
         background-attachment: fixed;
+        background-position: center;
         .fondoDesIcon {
             height: 250px;
             width: auto;

@@ -6,8 +6,8 @@
         width: auto;
         height: auto;
     }
-    &__img{
-        @include flex(column,center,center,row);
+    &__img {
+        @include flex(column,center,center,nowrap);
         height: 550px;
         width: 550px;
         overflow: hidden;
@@ -18,6 +18,8 @@
                 width: auto;
             }            
             border-radius: 0%;
+            height: 350px;
+            width: auto;
         }
     }
     .formulario {
