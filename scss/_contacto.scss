@@ -7,7 +7,7 @@
         height: auto;
     }
     &__img {
-        @include flex(column,center,center,nowrap);
+        @include flex(row,center,center,wrap);
         height: 550px;
         width: 550px;
         overflow: hidden;
@@ -15,11 +15,10 @@
         @include phone {
             .img__contacto{
                 height: 350px;
-                width: auto;
             }            
             border-radius: 0%;
             height: 350px;
-            width: auto;
+            width: 100%;
         }
     }
     .formulario {
