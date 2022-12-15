@@ -14,7 +14,7 @@
     .proyectos__card {
         @include flex(column,center,center,wrap);  
         margin: 200px 5%;      
-        padding:  20px;
+        padding: 20px;
         max-width: 600px;
         height: 400px;
         border-radius: 20px;
@@ -23,10 +23,17 @@
         z-index: 2;
         transition: all 1s;
         animation: card;
-        animation-duration: 4s;
+        animation-duration: 3s;
+        @include tablet {
+            opacity: .7;
+        }  
+        @include phone {
+            margin: auto;
+            height: auto;
+        }      
         &:hover{
             opacity: .9;
-        }
+        }    
         @keyframes card {
             0% {
                 opacity: 1;

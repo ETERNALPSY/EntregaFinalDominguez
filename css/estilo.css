@@ -303,7 +303,14 @@ body {
     z-index: 2;
     transition: all 1s;
     animation: card;
-    animation-duration: 4s; }
+    animation-duration: 3s; }
+    @media screen and (max-width: 1100px) {
+      .proyectos .proyectos__card {
+        opacity: .7; } }
+    @media screen and (max-width: 500px) {
+      .proyectos .proyectos__card {
+        margin: auto;
+        height: auto; } }
     .proyectos .proyectos__card:hover {
       opacity: .9; }
 
