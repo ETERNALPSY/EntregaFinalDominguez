@@ -295,11 +295,10 @@ body {
     align-items: center;
     flex-wrap: wrap;
     margin: 200px 5%;
-    padding: 0 20px;
+    padding: 20px;
     max-width: 600px;
     height: 400px;
     border-radius: 20px;
-    position: relative;
     background-color: white;
     opacity: .3;
     z-index: 2;
@@ -310,10 +309,21 @@ body {
       font-family: Arial, Helvetica, sans-serif;
       color: black;
       font-size: 35 px;
-      font-size: 50px;
+      font-size: 80px;
       font-family: 'Josefin Sans', sans-serif;
-      text-decoration: none;
-      opacity: none; }
+      margin: 20px;
+      text-decoration: underline; }
+    .proyectos .proyectos__card .card__sub {
+      font-family: Arial, Helvetica, sans-serif;
+      color: black;
+      font-size: 35 px;
+      font-size: 40px;
+      margin: 20px; }
+    .proyectos .proyectos__card .card__content {
+      font-family: Arial, Helvetica, sans-serif;
+      color: black;
+      font-size: 35 px;
+      font-size: 20px; }
 
 .contacto {
   margin: 40px auto 40px;
