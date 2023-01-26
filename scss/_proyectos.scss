@@ -10,6 +10,7 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+        z-index: -1;
     }
     .proyectos__card {
         @include flex(column,center,center,wrap);  
@@ -20,7 +21,6 @@
         border-radius: 20px;
         background-color: $maincolor;
         opacity: .3;
-        z-index: 2;
         transition: all 1s;
         animation: card;
         animation-duration: 3s;
