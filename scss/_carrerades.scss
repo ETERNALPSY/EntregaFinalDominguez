@@ -81,7 +81,9 @@
         center, wrap);
         margin: 20px auto;
         width: 100% vw;
-        overflow: hidden;
+        @include tablet {
+            overflow:hidden;
+        }
         .carreraIcon{
             display: inline-block;
             height: 193px;  

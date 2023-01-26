@@ -256,8 +256,10 @@ body {
     align-items: center;
     flex-wrap: wrap;
     margin: 20px auto;
-    width: 100% vw;
-    overflow: hidden; }
+    width: 100% vw; }
+    @media screen and (max-width: 1100px) {
+      .mainCarrera .divCarreraIcons {
+        overflow: hidden; } }
     .mainCarrera .divCarreraIcons .carreraIcon {
       display: inline-block;
       height: 193px;
