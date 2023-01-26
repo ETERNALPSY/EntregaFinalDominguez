@@ -256,7 +256,8 @@ body {
     align-items: center;
     flex-wrap: wrap;
     margin: 20px auto;
-    width: 100% vw; }
+    width: 100% vw;
+    overflow: hidden; }
     .mainCarrera .divCarreraIcons .carreraIcon {
       display: inline-block;
       height: 193px;
@@ -286,7 +287,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; }
+    object-fit: cover;
+    z-index: -1; }
   .proyectos .proyectos__card {
     display: flex;
     flex-direction: column;
@@ -300,7 +302,6 @@ body {
     border-radius: 20px;
     background-color: black;
     opacity: .3;
-    z-index: 2;
     transition: all 1s;
     animation: card;
     animation-duration: 3s; }
