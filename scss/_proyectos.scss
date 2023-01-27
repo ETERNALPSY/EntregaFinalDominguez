@@ -24,16 +24,9 @@
         transition: all 1s;
         animation: card;
         animation-duration: 3s;
-        @include tablet {
-            opacity: .7;
-        }  
-        @include phone {
-            margin: auto;
-            height: auto;
-        }      
         &:hover{
             opacity: .9;
-        }    
+        } 
         @keyframes card {
             0% {
                 opacity: 1;
@@ -43,6 +36,13 @@
                 opacity: .3;
             }            
         }
+        @include tablet {
+            opacity: .7;
+        }  
+        @include phone {
+            margin: auto;
+            height: auto;
+        }   
         .card__titulo {
             @include mainFont;
             color: white;
