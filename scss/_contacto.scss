@@ -22,9 +22,9 @@
         }
     }
     .formulario {
-        @include flex(column,center,center,norow);
+        @include flex(column,center,center,nowrap);
         margin: 30px auto;
-        .form__imput {
+        .form__input {
             background-color: transparent;
             color: $maincolor;
             width: 550px;
